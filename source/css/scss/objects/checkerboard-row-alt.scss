@@ -1,0 +1,10 @@
+.checkerboard-row-alt {
+  background-color: #fff;
+}
+
+@include respond-to('min-width-medium') {
+
+div.checkerboard-row-alt img {
+  float: right;
+}
+}

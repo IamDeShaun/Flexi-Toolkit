@@ -1,0 +1,140 @@
+/*------------------------------------*\
+    Typeography
+\*------------------------------------*/
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #4b88a2;
+    text-decoration: none;
+  
+    &:hover {
+      color: #252627;
+      text-decoration: underline;
+  
+      transition: .5s all;
+    }
+  }
+  
+article {
+    p { line-height: 1.75; } 
+  
+    h1{
+    font-size: 2rem;
+    color: #000;
+    line-height: 1.5;
+    }
+  
+    h2 {
+      font-size: 1rem;
+      line-height: 1.25;
+      color: #000;
+      font-weight: 600;
+   }
+  
+   h3 {
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #000;
+    text-transform: uppercase;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    line-height: 1.11111111;
+  }
+  
+  h5 {
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1.11111111;
+  }
+  
+  h6 {
+    font-size: .75rem;
+    line-height: 1.11111111;
+  }
+  
+  }
+  
+  
+  /*------------------------------------*\
+      Breakpoint
+  \*------------------------------------*/
+  
+  @include respond-to('min-width-medium') {
+  article {
+    h1 { font-size: 2.5rem; }
+    h4 { line-height: 1.22222222; }
+    h5 { line-height: 1.22222222; }
+    h6 { line-height: 1.22222222; }
+  
+  } 
+  
+  
+  }
+
+/*------------------------------------*\
+    Blockquote
+\*------------------------------------*/
+
+.blockquote {
+  font-size: 1.25rem;
+  color: #4b88a2;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  &::before {
+    margin: -6px auto 0;
+  }
+
+  &::after {
+    margin: 0 auto -5px;
+  }
+
+  &::before, &::after {
+    display: block;
+    content: " ";
+    background-color: #4b88a2;
+    width: 35%;
+    height: 10px;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    width: 90%;
+    margin: 2rem auto;
+  
+  }
+}
+
+
+/* Horizontal Rule */ 
+hr {
+	border: 0;
+    height: 2px;
+    background: $gray-light-2;
+    margin: $space-double 0;
+}
+
+abbr {
+    border-bottom: 1px dotted $gray;
+    cursor: help;
+}
+
+address {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+.citation {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
+}

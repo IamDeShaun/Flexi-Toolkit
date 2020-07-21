@@ -1,0 +1,169 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form ol, form ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.input-fields {
+	width: 49%;
+	float: left;
+	margin-right: 5px;
+}
+
+.message-box {
+	width: 49%;
+	float: right;
+	margin-right: 5px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0;
+  }
+  
+  .form-group {
+	  margin-bottom: 1rem;
+  }
+  
+  .form-control::placeholder {
+  
+	color: #6c757d;
+	opacity: 1;
+  
+  }
+  
+  .form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  form input.form-control {
+	height: calc(2.25em + 10px);
+	font-size: .889em;
+  }
+  
+  textarea.form-control {
+	height: auto;
+  }
+  
+  form label, form input.form-control, form textarea.form-control, form legend, form select, form input {
+	font-weight: 300;
+  }
+
+input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0 1px 0;
+}
+
+input, textarea {
+	width: 100%;
+	border: 1px solid $gray;
+	padding: $pad-half 0.65rem;
+}
+
+input.btn {
+width: inherit;
+padding: .8rem 3rem;
+font-size: .889rem;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+	-webkit-appearance: none;
+}
+
+button, input[type="submit"] {
+	padding: .8rem 3rem;
+	background: $gray-dark;
+	border: 1px solid $gray;
+	cursor: pointer;
+	font-size: .889rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.3em;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+//Form Field Container
+.field-container {
+	margin-bottom: $space;
+}
+
+.inline-form {
+	fieldset, .inline-container {
+		position: relative;
+	}
+	
+	input[type=submit], button, .btn {
+		font-size: $font-size-small-2;
+		padding: 0.65rem 1.3rem;
+		background: $gray-dark;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: auto;
+
+		&:hover, &:focus {
+			background: $gray;
+			color: $white;
+		}
+	}
+}
+
+/* Validation */
+.has-error {
+	border-color: $error;
+}
+.is-valid {
+	border-color: $valid;
+}
+
+
+
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+/* Search Form */
+.search-field {
+	padding-right: 3em;
+}
+.inline-form .search-submit {
+	background: none;
+	padding: 0.78em 1em;
+	border: 0;
+	border-left: 1px solid $gray;
+	color: $gray;
+}

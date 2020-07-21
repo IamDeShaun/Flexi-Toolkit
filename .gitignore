@@ -1,0 +1,7 @@
+/node_modules
+/pattern_exports
+/public
+dependencyGraph.json
+package-lock.json
+package.json
+pattenlab-config.json

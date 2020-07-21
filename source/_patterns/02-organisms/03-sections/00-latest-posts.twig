@@ -1,0 +1,9 @@
+<section class="section latest-posts">
+  
+    <ul class="post-list">
+    {% for post in latest_posts %}
+      <li>{% include "@molecules/01-layout/05-profile-cards.twig" %}</li>
+    {% endfor %}
+  </ul>
+    <a href="#" class="text-btn">View more posts</a>
+</section>

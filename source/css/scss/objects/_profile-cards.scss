@@ -1,0 +1,40 @@
+.profile-card {
+  background-color: #fff;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .profile-card-name {
+    color: #4b88a2;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 0 0 .75rem 0;
+  } 
+
+  a .profile-card-title, a .profile-card-text {
+    color: #363436 !important;
+    text-decoration: none;
+  }
+
+  .profile-card-title {
+    line-height: 1.25rem;
+    margin: .75rem 0;
+  }
+
+}
+
+
+@include respond-to('min-width-medium') {
+  .profile-card img {
+    float: left;
+    width: 30%;
+    margin: 0 3% 3% 0;
+  }
+
+}

@@ -1,0 +1,22 @@
+.pagination {
+  display: inline-block;
+
+  a {
+    float: left;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    background-color: #fff;
+    border: 1px solid #d7dbde;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+
+    &.active {
+      border-color: #d7dbde;
+      background-color: #d7dbde;
+      color: #4b88a2;
+      font-weight: 700;
+  
+    }
+  }
+}

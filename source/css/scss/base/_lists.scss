@@ -1,0 +1,88 @@
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Definition Lists */
+dl {
+	overflow: hidden;
+	margin: 0 0 $space;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}
+
+/*------------------------------------*\
+    Unordered List
+\*------------------------------------*/
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+article {
+
+  ul li {
+    line-height: 1.5;
+    padding-left: .75rem;
+
+    &:not(:last-child) {
+      padding-bottom: .75rem;
+    }
+  }
+
+  ul ul {
+    padding-top: .75rem;
+
+    li:not(:last-child) {
+      padding-bottom: .25rem;
+    }
+  }
+
+}
+
+
+/*------------------------------------*\
+    Ordered List
+\*------------------------------------*/
+
+article {
+
+  ol li {
+    line-height: 1.5;
+    padding-left: .75rem;
+
+    &:not(:last-child) {
+      padding-bottom: .75rem;
+    }
+  }
+
+  ol ol {
+    padding-top: .75rem;
+
+    li:not(:last-child) {
+      padding-bottom: .25rem;
+    }
+  }
+}
+
+
+/*------------------------------------*\
+    Definition List
+\*------------------------------------*/
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
