@@ -1588,6 +1588,30 @@ button.accordion {
 .article-content {
   background: white;
   padding: 1.2rem; }
+  .article-content.two-col-article {
+    background: none !important; }
+  .article-content .article-body {
+    background: white; }
+  .article-content img.responsive {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem; }
+  .article-content a:hover {
+    text-decoration: none; }
+  @media (min-width: 780px) {
+    .article-content .article-wrapper {
+      display: flex; } }
+  .article-content .article-body {
+    flex: 1;
+    background: white;
+    padding: 1rem; }
+  .article-content aside {
+    flex: 0 0 350px;
+    background: white;
+    margin-left: 10px; }
+  .article-content .sidebar-nav {
+    border-bottom: 1px solid #eeeeee; }
 
 .article-header h1 {
   font-size: 2.5em; }

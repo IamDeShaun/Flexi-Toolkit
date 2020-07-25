@@ -3,6 +3,50 @@
 .article-content {
 	background: white;
 	padding: 1.2rem;
+
+  &.two-col-article {
+background: none !important;
+  }
+
+	.article-body {
+    background: white;
+  }
+
+  img.responsive {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .article-wrapper {
+
+    @include respond-to('min-width-medium') { 
+      display: flex;
+    }
+
+  }
+
+  .article-body {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+  }
+
+  aside {
+    flex: 0 0 350px;
+    background: white;
+    margin-left: 10px;
+  }
+
+  .sidebar-nav {
+    border-bottom: 1px solid #eeeeee;
+  }
+
 }
 .article-header {
 	h1 {
