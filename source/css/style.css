@@ -1756,6 +1756,9 @@ button.accordion {
     font-size: 1.2rem;
     line-height: 1.4rem;
     margin: 0 0 .75rem 0; }
+    .profile-card .profile-card-name:hover {
+      color: #333;
+      transition: 3s; }
   .profile-card a .profile-card-title, .profile-card a .profile-card-text {
     color: #363436 !important;
     text-decoration: none; }
