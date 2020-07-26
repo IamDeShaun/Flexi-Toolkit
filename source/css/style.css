@@ -1030,20 +1030,29 @@ nav.breadcrumb-wrapper {
 .footer {
   clear: both;
   overflow: hidden;
-  background: #131313;
+  background: #424242;
   color: #fff;
   line-height: 1.2;
-  padding: 1rem;
-  text-align: center;
+  padding: .75rem;
   text-transform: uppercase; }
+  .footer.footer-links {
+    display: flex;
+    justify-content: center; }
+  .footer.nav-column h3.footer-heading {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase; }
   .footer p {
     margin-bottom: 0;
     font-size: .75rem; }
   .footer a {
-    color: #f9f9f9; }
+    color: #f9f9f9;
+    font-size: .75rem; }
 
 .nav-footer {
-  margin: -1em -1em 1em; }
+  margin: 0 auto; }
   .nav-footer li {
     border-bottom: 1px solid #333; }
     @media all and (min-width: 46.8em) {
@@ -1053,6 +1062,9 @@ nav.breadcrumb-wrapper {
   .nav-footer a {
     display: block;
     padding: 1em; }
+    .nav-footer a:hover {
+      text-decoration: none;
+      color: #20ddae; }
 
 @media all and (min-width: 46.8em) {
   .copyright {
@@ -1755,10 +1767,11 @@ button.accordion {
     color: #4b88a2;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    margin: 0 0 .75rem 0; }
+    margin: 0 0 .75rem 0;
+    font-weight: 600; }
     .profile-card .profile-card-name:hover {
       color: #333;
-      transition: 3s; }
+      transition: 2s; }
   .profile-card a .profile-card-title, .profile-card a .profile-card-text {
     color: #363436 !important;
     text-decoration: none; }

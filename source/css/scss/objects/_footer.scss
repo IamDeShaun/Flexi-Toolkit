@@ -4,12 +4,24 @@
 .footer {
 	clear: both;
 	overflow: hidden;
-	background: $gray-dark-2;
+	background: #424242;
 	color: $white;
 	line-height: 1.2;
-	padding: 1rem;
-	text-align: center;
+	padding: .75rem;
 	text-transform: uppercase;
+
+	&.footer-links {
+		display: flex;
+		justify-content: center;
+	}
+
+	&.nav-column h3.footer-heading {
+		display: block;
+		text-align: left;
+		font-size: 18px;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
 
 	p {
 		margin-bottom: 0;
@@ -18,12 +30,13 @@
 
 	a {
 		color: $gray-light;
+		font-size: .75rem;
 	}
 }
 
 //Footer Nav
 .nav-footer {
-	margin: (-$pad) (-$pad) $space;
+	margin: 0 auto;
 
 	li {
 		border-bottom: 1px solid $gray-dark;
@@ -37,6 +50,12 @@
 	a {
 		display: block;
 		padding: $pad;
+
+		&:hover {
+			text-decoration: none;
+			color: #20ddae;
+
+		}
 	}
 }
 
